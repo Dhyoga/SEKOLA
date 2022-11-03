@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;800&display=swap');
+
+:root{
+    --primary:#10287A;
+    --secondary: #FFD600;
+    --poppin: 'Poppins', sans-serif;
+    --inter: 'Inter', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+body>*{
+    padding: 16px 128px;
+}
+span{
+    color: var(--secondary);
+}
+svg, i{
+    font-size: 32px;
+}
+svg{
+    width: 100px;
+
+}
+/* Header */
+header{
+    top: 0;
+    position: sticky;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    font-family: var(--inter);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 86px;
+}
+nav a:hover{
+    color:var(--secondary);
+    border-bottom: .1rem solid var(--secondary);
+    padding-bottom: .5rem;
+}
+nav button{
+    margin-left: 48px;
+    font-family: var(--poppin);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 48px;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+nav button:hover{
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+#home{
+    font-family: var(--poppin);
+    background-color: var(--primary);
+    color: white;
+    padding: 16px 128px;
+    display: flex;
+    justify-content: space-between;
+}
+.intro h1{
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.intro p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.intro button{
+    font-family: var(--poppin);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+.intro button:hover{
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.intro .sponsor:hover{
+    cursor: pointer;
+}
+.jumbotron img{
+    display: block;
+    align-self: center;
+    width: 40%;
+}
+#profile{
+    background-color: white;
+    font-family: var(--poppin);
+}
+#profile center h2{
+    font-size: 48px;
+    font-weight: 800;
+}
+#profile center p{
+    font-weight: 500;
+    font-size: 24px;
+}
+#profile .container{
+    display: flex;
+    flex-direction: row;
+}
+
+#profile .container .card{
+    padding: 24px;
+    display: flex-row;
+    justify-content: space-between;
+}
+#profile .container .card:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+    color: white;
+}
+#profile .container .card h3{
+    font-size: 32px;
+    font-weight: 800;
+}
+#profile .container .card p{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#article{
+    font-family: var(--poppin);
+}
+#article h1{
+    text-align: center;
+    font-family: var(--inter);
+    font-size: 56px;
+    font-weight: 800;
+}
+#article .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#article .container .card{
+    display: flex;
+    flex: 27%;
+    flex-direction: column;
+    padding: 32px;
+}
+#article .container .card h2{
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+#article .container .card .date{
+    font-weight: 500;
+    font-size: 14px;
+}
+#article .container .card p{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 4px;
+}
+#article .container .card button{
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+#article .container .card button:hover{
+    cursor: pointer;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+table{
+    font-size: 18px;
+    font-weight: 500;
+}
+th{
+    font-weight: bold;
+}
+th, td{
+    text-align: start;
+    padding: 8px 128px;
+}
+td > img{
+    vertical-align: middle;
+}
+td:hover{
+    cursor: pointer;
+    color: var(--secondary);
+}
+#info, #pusing{
+    font-family: var(--inter);
+    font-weight: 800;
+    padding-right: 0;
+    margin-right: 0;
+}
+#info h1{
+    margin-top: 24px;
+    font-size: 56px;
+}
+#info p{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+#info img{
+    float: right;
+}
+#pusing{
+    background-color: #10287A;
+    color: white;
+    display: flex;
+    padding: 0px 128px;
+}
+#pusing .card{
+    margin-right: 64px;
+}
+#pusing .card h1{
+    font-size: 43.5px;
+}
+#pusing .card p{
+    font-size: 24px;
+}
+
+footer{
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--poppin);
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer div img{
+    align-self: flex-start;
+}
+footer p{
+    font-size: 18px;
+}
+
+.contact{
+    background-color: var(--primary);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 2.5% 25%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+
+.modal-content {
+    font-family: var(--poppin);
+    background-color: var(--primary);
+    color: white;
+    padding: 64px;
+    border-radius: 16px;
+    width: 40%;
+}
+.contact h1{
+    text-align: center;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+
+}
+form input, form textarea{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    padding: 16px;
+    border:0px;
+    outline: 0;
+}
+form textarea{
+    height: 240px;
+    resize: none;
+}
+form input{
+    margin: 8px 0 8px;
+
+}
+form button{
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 48px;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+form button:hover{
+    background-color: var(--secondary);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
+  
