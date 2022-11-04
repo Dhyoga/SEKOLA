@@ -164,9 +164,29 @@ nav button:hover{
     flex-direction: column;
     padding: 32px;
 }
+#article .container .card:hover{
+    background-color: var(--primary);
+    color: white;
+}
+/* #article .container .card .img{
+    overflow: hidden;
+    width: 100%;
+}
+#article .container .card .img img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+#article .container .card:hover .img img{
+    transform: scale(1.1);
+} */
+#article .container .card img:hover{
+    cursor: pointer;
+}
 #article .container .card h2{
     font-weight: 800;
     margin-bottom: 4px;
+    cursor: pointer;
 }
 #article .container .card .date{
     font-weight: 500;
